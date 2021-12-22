@@ -19,9 +19,7 @@ function App() {
     <div className="wrap">
       <Header/>
       <div className="container">
-        <Switch>
-          <Route exact path="/" component={Main} />
-        </Switch>
+        <Main />
       </div>
       <Footer/>
     </div>
