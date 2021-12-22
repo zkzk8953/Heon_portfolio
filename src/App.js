@@ -19,7 +19,9 @@ function App() {
     <div className="wrap">
       <Header/>
       <div className="container">
-        <Main />
+        <Switch>
+          <Route exact path="/" component={Main} basename={process.env.PUBLIC_URL} />
+        </Switch>
       </div>
       <Footer/>
     </div>
