@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Heon_portfolio/static/css/main.fa0242d3.chunk.css",
-    "main.js": "/Heon_portfolio/static/js/main.a7d2a004.chunk.js",
-    "main.js.map": "/Heon_portfolio/static/js/main.a7d2a004.chunk.js.map",
+    "main.css": "/Heon_portfolio/static/css/main.73718a91.chunk.css",
+    "main.js": "/Heon_portfolio/static/js/main.a7cafb85.chunk.js",
+    "main.js.map": "/Heon_portfolio/static/js/main.a7cafb85.chunk.js.map",
     "runtime-main.js": "/Heon_portfolio/static/js/runtime-main.c931001e.js",
     "runtime-main.js.map": "/Heon_portfolio/static/js/runtime-main.c931001e.js.map",
     "static/css/2.c2e3dd50.chunk.css": "/Heon_portfolio/static/css/2.c2e3dd50.chunk.css",
@@ -12,18 +12,18 @@
     "static/js/3.e392f2dc.chunk.js.map": "/Heon_portfolio/static/js/3.e392f2dc.chunk.js.map",
     "index.html": "/Heon_portfolio/index.html",
     "static/css/2.c2e3dd50.chunk.css.map": "/Heon_portfolio/static/css/2.c2e3dd50.chunk.css.map",
-    "static/css/main.fa0242d3.chunk.css.map": "/Heon_portfolio/static/css/main.fa0242d3.chunk.css.map",
+    "static/css/main.73718a91.chunk.css.map": "/Heon_portfolio/static/css/main.73718a91.chunk.css.map",
     "static/js/2.80bc1a0b.chunk.js.LICENSE.txt": "/Heon_portfolio/static/js/2.80bc1a0b.chunk.js.LICENSE.txt",
     "static/media/03_01.f241f8f2.jpg": "/Heon_portfolio/static/media/03_01.f241f8f2.jpg",
     "static/media/1_01.aa155ac7.jpg": "/Heon_portfolio/static/media/1_01.aa155ac7.jpg",
-    "static/media/main.scss": "/Heon_portfolio/static/media/thebuild.09da884f.jpg",
+    "static/media/main.scss": "/Heon_portfolio/static/media/tistory.728d2157.png",
     "static/media/reset.css": "/Heon_portfolio/static/media/NotoSansCJKkr-Regular.bc433f24.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.c931001e.js",
     "static/css/2.c2e3dd50.chunk.css",
     "static/js/2.80bc1a0b.chunk.js",
-    "static/css/main.fa0242d3.chunk.css",
-    "static/js/main.a7d2a004.chunk.js"
+    "static/css/main.73718a91.chunk.css",
+    "static/js/main.a7cafb85.chunk.js"
   ]
 }
