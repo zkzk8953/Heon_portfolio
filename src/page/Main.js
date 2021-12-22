@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Scrollbar, Navigation, Autoplay } from 'swiper';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faUser, faBirthdayCake , faMapMarkerAlt, faPhoneSquare, faEnvelope, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import IMG1 from '../asset/images/1_01.jpg';
+import IMG2 from '../asset/images/02_01.jpg';
+import IMG3 from '../asset/images/03_01.jpg';
+import IMG4 from '../asset/images/04_01.jpg';
+import IMG5 from '../asset/images/05_01.jpg';
+import IMG6 from '../asset/images/thebuild.jpg';
 //style
-import '../asset/css/main.css';
-import '../asset/css/main.css';
+import '../asset/css/main.scss';
 import 'swiper/swiper.scss';
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
@@ -112,13 +116,7 @@ export default function Main () {
                         <div className='skill_box1 box' >
                             <h3>Front-end</h3>
                             <div className='skill1 actual'>
-                                <p className='skill1_ul1'>{/* html,css,js images */}</p>
-                                <p className='skill1_ul2'>{/* react images */}</p>
-                                <p className='skill1_ul3'>{/* redux images */}</p>
-                                <ul className='skill1_ul'>
-                                    <li>{/* jquery images */}</li>
-                                    <li>{/* sass images */}</li>
-                                </ul>
+                                <img src={IMG1} width={"100%"}/>
                             </div>
                         </div>
                     </div>
@@ -126,8 +124,13 @@ export default function Main () {
                         <div className='skill_box2 box'>
                             <h3>Back-end</h3>
                             <div className='skill2 actual'>
-                                <p>{/* node images */}</p>
-                                <p>{/* mongodb images */}</p>
+                                <img src={IMG2} width={"100%"}/>
+                            </div>
+                        </div>
+                        <div className='skill_box2 box'>
+                            <h3>Community</h3>
+                            <div className='skill2 actual'>
+                                <img src={IMG5} width={"100%"}/>
                             </div>
                         </div>
                     </div>
@@ -135,17 +138,13 @@ export default function Main () {
                         <div className='skill_box3 box'>
                             <h3>Version Control</h3>
                             <div className='skill3 actual'>
-                                <p>{/* git images */}</p>
-                                <p>{/* github images */}</p>
+                                <img src={IMG3} width={"100%"}/>
                             </div>
                         </div>
                         <div className='skill_box4 box'>
-                            <h3>graphic</h3>
+                            <h3>Graphic</h3>
                             <div className='skill4 actual'>
-                                <ul className='skill1_ul2'>
-                                    <li>{/* photoshop images */}</li>
-                                    <li>{/* illorstrator images */}</li>
-                                </ul>
+                                <img src={IMG4} width={"100%"}/>
                             </div>
                         </div>
                     </div>
@@ -256,7 +255,7 @@ export default function Main () {
                                 </dl>
                                 <dl>
                                     <dt>✔ Front-end</dt>
-                                    <dd>프론트엔드 기술스택</dd>
+                                    <dd>React, Sass</dd>
                                 </dl>
                             </div>
                         </div>
@@ -290,8 +289,33 @@ export default function Main () {
             </div>
             <div className='main_section6 section'>
                 <h2>CAREER</h2>
-                <div className='carrer_contents'>
-
+                <div className='career_contents'>
+                    <div className='career_left'>
+                        <p></p>
+                    </div>
+                    <div className='career_right'>
+                        <div className='top_contents'>
+                            <h3>(주)더빌드소프트</h3>
+                            <p>2021.07 ~ 2021.12</p>
+                            <p>다양한 웹/앱 솔루션 등을 기획부터 디자인, 개발, 실제 서비스, 유지보수까지 맡아 책임지는 회사입니다.</p>
+                            <p>
+                                신입 개발자로서 React를 기반으로한 프로젝트들의 퍼블리싱부터 시작하여 기능개발, 
+                                API통신, 데이터 바인딩 등의 프론트 엔드 업무들을 도맡아서 해왔습니다. 
+                                
+                            </p>
+                        </div>
+                        <div className='btm_contents'>
+                            <div className='career1'>
+                                <h4>▎공새로 프로젝트</h4>
+                                <p>2020.07 ~ (진행중)</p>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

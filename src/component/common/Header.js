@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 //library
 import { Link } from 'react-router-dom';
 //css
-import '../../asset/css/common.css';
+import '../../asset/css/common.scss';
 
 
 export default function Header () {
@@ -31,6 +31,12 @@ export default function Header () {
         {
             id: 3,
             title: "Archiving",
+            active: false,
+            link : "/contact"
+        },
+        {
+            id: 3,
+            title: "Career",
             active: false,
             link : "/contact"
         }
