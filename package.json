@@ -27,7 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://zkzk8953.github.io/Heon_portfolio",
+  "homepage": "https://zkzk8953.github.io/Heon_portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
