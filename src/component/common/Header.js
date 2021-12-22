@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, {useEffect, useState} from 'react';
 //library
 import { Link } from 'react-router-dom';
@@ -53,7 +55,7 @@ export default function Header () {
                 <ul className="main_nav">
                     {menuList.map((data, i)=>{
                         return (
-                            <li><Link 
+                            <li key={data.id}><Link 
                                 to={data.link} 
                                 className={scrollPosition > 15 ? "active_font" : "none"}
                                 onClick={()=>{
