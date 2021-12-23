@@ -5,7 +5,6 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './component/common/Header';
 import Footer from './component/common/Footer';
 import Main from './page/Main';
-
 //css
 import '../src/asset/css/reset.css';
 
@@ -20,7 +19,7 @@ function App() {
       <Header/>
       <div className="container">
         <Switch>
-          <Route exact path="/" component={Main} basename={process.env.PUBLIC_URL} />
+          <Route exact path="/" component={Main}/>
         </Switch>
       </div>
       <Footer/>

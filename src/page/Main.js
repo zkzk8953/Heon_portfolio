@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Scrollbar, Navigation, Autoplay } from 'swiper';
+import SwiperCore, { Pagination } from 'swiper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faUser, faBirthdayCake , faMapMarkerAlt, faPhoneSquare, faEnvelope, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { projectData } from '../asset/js/dummy';
+//images
 import IMG1 from '../asset/images/1_01.jpg';
 import IMG2 from '../asset/images/02_01.jpg';
 import IMG3 from '../asset/images/03_01.jpg';
 import IMG4 from '../asset/images/04_01.jpg';
 import IMG5 from '../asset/images/05_01.jpg';
-import IMG6 from '../asset/images/thebuild.jpg';
+import IMG6 from '../asset/images/git-hub.png';
+import IMG7 from '../asset/images/tistory.png';
 //style
 import '../asset/css/main.scss';
 import 'swiper/swiper.scss';
@@ -17,20 +20,22 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/lazy/lazy.scss"
 
+
 SwiperCore.use([Pagination]); // *
 
 export default function Main () {
     const [isOver, setIsOver] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
+/*     const [scrollPosition, setScrollPosition] = useState(0);
 
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
     };
-
+ */
 
     useEffect (()=> {
-        window.addEventListener('scroll', updateScroll);
+        /* window.addEventListener('scroll', updateScroll); */
     }, []);
+
 
 
 
@@ -61,14 +66,14 @@ export default function Main () {
                 <div className='section2_contents'>
                     <div className='contents1 contents'>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faUser} size="2x"/></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faUser} size="2x"/></p>
                             <dl>
                                 <dt>NAME</dt>
                                 <dd>이성헌</dd>
                             </dl>
                         </div>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faBirthdayCake} size="2x" /></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faBirthdayCake} size="2x" /></p>
                             <dl>
                                 <dt>BIRTH</dt>
                                 <dd>95.03.07</dd>
@@ -77,14 +82,14 @@ export default function Main () {
                     </div>
                     <div className='contents2 contents'>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faMapMarkerAlt} size="2x" /></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faMapMarkerAlt} size="2x" /></p>
                             <dl>
                                 <dt>ADDRESS</dt>
                                 <dd>인천광역시 미추홀구</dd>
                             </dl>
                         </div>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faPhoneSquare} size="2x" /></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faPhoneSquare} size="2x" /></p>
                             <dl>
                                 <dt>TEL</dt>
                                 <dd>010 7794 2286</dd>
@@ -93,14 +98,14 @@ export default function Main () {
                     </div>
                     <div className='contents3 contents'>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faEnvelope} size="2x"/></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faEnvelope} size="2x"/></p>
                             <dl>
                                 <dt>EMAIL</dt>
                                 <dd>zkzk8953@naver.com</dd>
                             </dl>
                         </div>
                         <div className='contents_box'>
-                            <p><FontAwesomeIcon icon={faUserGraduate} size="2x"/></p>
+                            <p><FontAwesomeIcon className='fa_icon' icon={faUserGraduate} size="2x"/></p>
                             <dl>
                                 <dt>EDUCATION</dt>
                                 <dd>단국대학교 운동처방재활</dd>
@@ -116,7 +121,7 @@ export default function Main () {
                         <div className='skill_box1 box' >
                             <h3>Front-end</h3>
                             <div className='skill1 actual'>
-                                <img src={IMG1} width={"100%"}/>
+                                <img src={IMG1} alt='프론트엔드 아이콘'/>
                             </div>
                         </div>
                     </div>
@@ -124,13 +129,13 @@ export default function Main () {
                         <div className='skill_box2 box'>
                             <h3>Back-end</h3>
                             <div className='skill2 actual'>
-                                <img src={IMG2} width={"100%"}/>
+                                <img src={IMG2} alt='백엔드 아이콘'/>
                             </div>
                         </div>
                         <div className='skill_box2 box'>
                             <h3>Community</h3>
                             <div className='skill2 actual'>
-                                <img src={IMG5} width={"100%"}/>
+                                <img src={IMG5} alt='커뮤니티 아이콘'/>
                             </div>
                         </div>
                     </div>
@@ -138,13 +143,13 @@ export default function Main () {
                         <div className='skill_box3 box'>
                             <h3>Version Control</h3>
                             <div className='skill3 actual'>
-                                <img src={IMG3} width={"100%"}/>
+                                <img src={IMG3} alt='깃 아이콘'/>
                             </div>
                         </div>
                         <div className='skill_box4 box'>
                             <h3>Graphic</h3>
                             <div className='skill4 actual'>
-                                <img src={IMG4} width={"100%"}/>
+                                <img src={IMG4} alt='깃허브 아이콘'/>
                             </div>
                         </div>
                     </div>
@@ -152,137 +157,74 @@ export default function Main () {
             </div>
             <div className="main_section4 section">
                 <h2>PROJECT</h2>
-                <div className='project_contents'>
-                    <h3>To-Do-List</h3>
-                    <p>2021.08 (개인 프로젝트)</p>
-                    <div className='project_side'>
-                        <div className='project_left'>
-                            <Swiper
-                                className='swiper-container'
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                pagination={{clickable: true}}
-                            >
-                                <SwiperSlide>사진1</SwiperSlide>
-                                <SwiperSlide>사진2</SwiperSlide>
-                                <SwiperSlide>사진3</SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className='project_right'>
-                            <p>설명 문단</p>
-                            <div className='stack'>
-                                <dl>
-                                    <dt>✔ 주요기능</dt>
-                                    <dd>주요기능 설명</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ GitHub</dt>
-                                    <dd><a href="https://github.com/zkzk8953/Heon-toDoList">https://github.com/zkzk8953/Heon-toDoList</a></dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ Front-end</dt>
-                                    <dd>프론트엔드 기술스택</dd>
-                                </dl>
+                {projectData.map((data, i) => {
+                    return (
+                    <div className='project_contents' key={data.term}>
+                        <h3>{data.title}</h3>
+                        <p>{data.term}</p>
+                        <div className='project_side'>
+                            <div className='project_left'>
+                                <Swiper
+                                    className='swiper-container'
+                                    spaceBetween={50}
+                                    slidesPerView={1}
+                                    pagination={{clickable: true}}
+                                >
+                                    {data.photo.map((obj , index)=>{
+                                        return (
+                                            <SwiperSlide key={obj.photoUrl}>{obj.photoUrl}</SwiperSlide>
+                                        )
+                                    })}
+                                </Swiper>
+                            </div>
+                            <div className='project_right'>
+                                <p>{data.description}</p>
+                                <div className='stack'>
+                                    <dl>
+                                        <dt>✔ 주요기능</dt>
+                                        <dd>{data.mainFunc}</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>✔ GitHub</dt>
+                                        <dd><a href={data.github}>{data.github}</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>✔ Front-end</dt>
+                                        <dd>{data.feStack}</dd>
+                                    </dl>
+                                    {data.beStack &&                                     
+                                    <dl>
+                                        <dt>✔ Back-end</dt>
+                                        <dd>{data.beStack}</dd>
+                                    </dl>}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='project_contents'>
-                    <h3>공새로</h3>
-                    <p>2021.10 ~ (진행중)</p>
-                    <div className='project_side'>
-                        <div className='project_left'>
-                            <Swiper
-                                className='swiper-container'
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                pagination={{clickable: true}}
-                            >
-                                <SwiperSlide>사진1</SwiperSlide>
-                                <SwiperSlide>사진2</SwiperSlide>
-                                <SwiperSlide>사진3</SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className='project_right'>
-                            <p>설명 문단</p>
-                            <div className='stack'>
-                                <dl>
-                                    <dt>✔ 주요기능</dt>
-                                    <dd>주요기능 설명</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ GitHub</dt>
-                                    <dd>깃허브 주소</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ Front-end</dt>
-                                    <dd>React, Axios, Context Api</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ Back-end</dt>
-                                    <dd>React, Axios, Context Api</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='project_contents'>
-                    <h3>포트폴리오 웹사이트</h3>
-                    <p>2021.12 (개인 프로젝트)</p>
-                    <div className='project_side'>
-                        <div className='project_left'>
-                            <Swiper
-                                className='swiper-container'
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                pagination={{clickable: true}}
-                            >
-                                <SwiperSlide>사진1</SwiperSlide>
-                                <SwiperSlide>사진2</SwiperSlide>
-                                <SwiperSlide>사진3</SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className='project_right'>
-                            <p>설명 문단</p>
-                            <div className='stack'>
-                                <dl>
-                                    <dt>✔ 주요기능</dt>
-                                    <dd>주요기능 설명</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ GitHub</dt>
-                                    <dd>깃허브 주소</dd>
-                                </dl>
-                                <dl>
-                                    <dt>✔ Front-end</dt>
-                                    <dd>React, Sass</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    )
+                })}
             </div>
             <div className="main_section5 section">
                 <h2>ARCHIVING</h2>
                 <div className='section5_contents'>
                     <div className='archiving_box'>
-                        <h3>{/* img */}</h3>
+                        <h3><img src={IMG6} alt="깃허브 아이콘" /></h3>
                         <p><a href="https://github.com/zkzk8953/Heon-toDoList">https://github.com/zkzk8953/Heon-toDoList</a></p>
-                        <p>깃허브 주소입니다.</p>
+                        <p><span>소스코드 저장소 주소</span>입니다.</p>
                         <ul>
-                            <li>❔</li>
-                            <li>❔</li>
-                            <li>❔</li>
+                            <li>❔ 프로젝트 기획을 보고 연습하던 소스 코드</li>
+                            <li>❔ 개인 공부를 진행하며 코딩했던 소스 코드</li>
+                            <li>❔ 여러 라이브러리를 예습하기 위한 코드</li>
                         </ul>
                     </div>
                     <div className='archiving_box'>
-                        <h3>{/* img */}</h3>
+                        <h3><img src={IMG7} alt="티스토리 아이콘"/></h3>
                         <p><a href="https://github.com/zkzk8953/Heon-toDoList">https://github.com/zkzk8953/Heon-toDoList</a></p>
-                        <p>개발블로그 주소입니다.</p>
+                        <p><span>공부 및 지식 정리 목적의 블로그</span>입니다.</p>
                         <ul>
-                            <li>❔</li>
-                            <li>❔</li>
-                            <li>❔</li>
+                            <li>❔ 프로젝트에 들어가기전 예습, 복습을 위한 공간</li>
+                            <li>❔ 내가 구현한 기능들을 온전히 나의 것으로 만들기</li>
+                            <li>❔ 웹 개발자로서의 기반을 다지기 위한 지식 정리</li>
                         </ul>
                     </div>
                 </div>
@@ -306,10 +248,19 @@ export default function Main () {
                         </div>
                         <div className='btm_contents'>
                             <div className='career1'>
-                                <h4>▎공새로 프로젝트</h4>
-                                <p>2020.07 ~ (진행중)</p>
+                                <h4>▎zero waste 관리자 페이지</h4>
+                                <p>2020.07 ~ 2020.08</p>
                                 <ul>
+                                    <li>API 통신을 통한 데이터 바인딩을 담당.</li>
                                     <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div className='career1'>
+                                <h4>▎공새로 프로젝트</h4>
+                                <p>2020.08 ~ (진행중)</p>
+                                <ul>
+                                    <li>프로젝트 전반의 프론트 엔드 업무 담당</li>
                                     <li></li>
                                     <li></li>
                                 </ul>
