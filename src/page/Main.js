@@ -76,7 +76,7 @@ export default function Main () {
                             <p><FontAwesomeIcon className='fa_icon' icon={faBirthdayCake} size="2x" /></p>
                             <dl>
                                 <dt>BIRTH</dt>
-                                <dd>95.03.07</dd>
+                                <dd>1995.03.07</dd>
                             </dl>
                         </div>
                     </div>
@@ -172,7 +172,9 @@ export default function Main () {
                                 >
                                     {data.photo.map((obj , index)=>{
                                         return (
-                                            <SwiperSlide key={obj.photoUrl}>{obj.photoUrl}</SwiperSlide>
+                                            <SwiperSlide key={obj.photoUrl}>
+                                                <img src={obj.photoUrl} alt="프로젝트 이미지" />
+                                            </SwiperSlide>
                                         )
                                     })}
                                 </Swiper>
@@ -186,7 +188,7 @@ export default function Main () {
                                     </dl>
                                     <dl>
                                         <dt>✔ GitHub</dt>
-                                        <dd><a href={data.github}>{data.github}</a></dd>
+                                        <dd><a href={data.github} target="_blank">{data.github}</a></dd>
                                     </dl>
                                     <dl>
                                         <dt>✔ Front-end</dt>
@@ -209,7 +211,7 @@ export default function Main () {
                 <div className='section5_contents'>
                     <div className='archiving_box'>
                         <h3><img src={IMG6} alt="깃허브 아이콘" /></h3>
-                        <p><a href="https://github.com/zkzk8953/Heon-toDoList">https://github.com/zkzk8953/Heon-toDoList</a></p>
+                        <p><a href="https://github.com/zkzk8953" target="_blank">https://github.com/zkzk8953</a></p>
                         <p><span>소스코드 저장소 주소</span>입니다.</p>
                         <ul>
                             <li>❔ 프로젝트 기획을 보고 연습하던 소스 코드</li>
@@ -219,7 +221,7 @@ export default function Main () {
                     </div>
                     <div className='archiving_box'>
                         <h3><img src={IMG7} alt="티스토리 아이콘"/></h3>
-                        <p><a href="https://github.com/zkzk8953/Heon-toDoList">https://github.com/zkzk8953/Heon-toDoList</a></p>
+                        <p><a href="https://hunsenal.tistory.com/" target="_blank">https://hunsenal.tistory.com/</a></p>
                         <p><span>공부 및 지식 정리 목적의 블로그</span>입니다.</p>
                         <ul>
                             <li>❔ 프로젝트에 들어가기전 예습, 복습을 위한 공간</li>
@@ -260,7 +262,7 @@ export default function Main () {
                                 <h4>▎공새로 프로젝트</h4>
                                 <p>2020.08 ~ (진행중)</p>
                                 <ul>
-                                    <li>프로젝트 전반의 프론트 엔드 업무 담당</li>
+                                    <li>프로젝트 전반의 프론트 엔드 업무 담당.</li>
                                     <li></li>
                                     <li></li>
                                 </ul>
