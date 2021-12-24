@@ -16,7 +16,7 @@ export const projectData = [
             {des : 'CRUD의 연습과 특정 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키우는 것을 목적으로 시작한 프로젝트이지만, 직접 사용하는 일이 잦아지면서 실제로 사용 가능한 투두리스트 앱을 만드는 것을 최종 목표로 삼고 꾸준히 개발중인 프로젝트 입니다.'},
         ],
         mainFunc : '할일 불러오기·추가·수정·삭제 기능(Storage), 맛집 등록하기 · 삭제 · 위치찾기(Google maps)',
-        github : 'github.com/zkzk8953/Heon-toDoList',
+        github : 'https://github.com/zkzk8953/Heon-toDoList',
         feStack : 'React, LocalStorage'
     },
     {
@@ -26,7 +26,7 @@ export const projectData = [
             {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
         ],
         description : [ 
-            {des : ''},
+            {des : '공새로는 수요 예측 분석을 통한 건설 현장 맞춤형 건자재 조달 플랫폼 솔루션입니다. 사용자는 이 솔루션을 활용해서 건자재 투입 시기와 비용을 예측할 수 있는데 이를 통해서 사업성 분석, 현금 흐름 리스크 관리가 가능합니다.'},
             {des : ''},
             {des : ''},
             {des : ''}
