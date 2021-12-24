@@ -33,7 +33,7 @@ export default function Main () {
  */
 
     useEffect (()=> {
-        /* window.addEventListener('scroll', updateScroll); */
+        window.scrollTo(0, 0);
     }, []);
 
 

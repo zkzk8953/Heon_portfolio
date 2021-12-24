@@ -10,7 +10,7 @@ export const projectData = [
         photo : [
             {photoUrl: ToDo},{photoUrl : ToDo3}
         ],
-        description : '프론트 엔드 개발자로서의 기본적인 소양을 기르기 위해 만든 투두리스트입니다. CRUD 연습과 각종 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키웠습니다.구글맵 api를 사용한 맛집 저장 기능도 추가하여 지속적인 업데이트로 실제로 사용가능한 투두앱을 만드는 것을 목표로 하고 있습니다. ',
+        description : '프론트 엔드 개발자로서의 기본적인 소양을 기르기 위해 만든 투두리스트입니다. CRUD 연습과 각종 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키웠습니다. 구글맵 api를 사용한 맛집 저장 기능도 추가하여 지속적인 업데이트로 실제로 사용가능한 투두앱을 만드는 것을 목표로 하고 있습니다. ',
         mainFunc : '할일 불러오기·추가·수정·삭제 기능(Storage), 맛집 등록하기 · 삭제 · 위치찾기(Google maps)',
         github : 'github.com/zkzk8953/Heon-toDoList',
         feStack : 'React, LocalStorage, Context Api'

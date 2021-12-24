@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //library
 import { Route, Switch } from 'react-router-dom';
 //component
@@ -7,6 +7,7 @@ import Footer from './component/common/Footer';
 import Main from './page/Main';
 //css
 import '../src/asset/css/reset.css';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -14,6 +15,15 @@ import '../src/asset/css/reset.css';
 
 
 function App() {
+  const location = useLocation();
+
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, [location]);
+
+
+
   return (
     <div className="wrap">
       <Header/>
