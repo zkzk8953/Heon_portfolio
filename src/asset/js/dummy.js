@@ -10,10 +10,14 @@ export const projectData = [
         photo : [
             {photoUrl: ToDo},{photoUrl : ToDo3}
         ],
-        description : '프론트 엔드 개발자로서의 기본적인 소양을 기르기 위해 만든 투두리스트입니다. CRUD 연습과 각종 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키웠습니다. 구글맵 api를 사용한 맛집 저장 기능도 추가하여 지속적인 업데이트로 실제로 사용가능한 투두앱을 만드는 것을 목표로 하고 있습니다. ',
+        description : [ 
+            {des : '프론트 엔드 개발자로서의 기본적인 소양을 기르기 위해 만든 투투리스트 입니다. 할일을 추가하거나 삭제하는 기능은 물론이고, 수정과 전체삭제 등의 기능을 만들어 편리함을 제공하였습니다. (localStorage를 이용하여 백엔드 없이 프론트 엔드 작업만으로 기능을 완성하였습니다.)'},
+            {des : '메뉴 버튼을 눌러 맵이라는 페이지에 들어가면 구글맵 api를 사용하여 특정 위치를 저장할 수 있는 기능을 사용할 수 있습니다. '},
+            {des : 'CRUD의 연습과 특정 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키우는 것을 목적으로 시작한 프로젝트이지만, 직접 사용하는 일이 잦아지면서 실제로 사용 가능한 투두리스트 앱을 만드는 것을 최종 목표로 삼고 꾸준히 개발중인 프로젝트 입니다.'},
+        ],
         mainFunc : '할일 불러오기·추가·수정·삭제 기능(Storage), 맛집 등록하기 · 삭제 · 위치찾기(Google maps)',
         github : 'github.com/zkzk8953/Heon-toDoList',
-        feStack : 'React, LocalStorage, Context Api'
+        feStack : 'React, LocalStorage'
     },
     {
         title : "공새로",
@@ -21,7 +25,12 @@ export const projectData = [
         photo : [
             {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
         ],
-        description : '현장과 건설용품 판매 업체를 매칭 시켜주는 역경매 플랫폼으로 반응형 웹/앱 형식으로 진행되었습니다.',
+        description : [ 
+            {des : ''},
+            {des : ''},
+            {des : ''},
+            {des : ''}
+        ],
         mainFunc : '카카오맵 api를 이용한 건설현장 매칭기능, 아임포트 이용 결제기능, socket.io 이용 채팅기능',
         github : '깃헙주소',
         feStack : 'React, Context Api, ',
@@ -33,7 +42,12 @@ export const projectData = [
         photo : [
             {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
         ],
-        description : '설명',
+        description : [ 
+            {des : ''},
+            {des : ''},
+            {des : ''},
+            {des : ''}
+        ],
         mainFunc : '주요기능',
         github : '깃헙주소',
         feStack : '프론트엔드 기술 스택'

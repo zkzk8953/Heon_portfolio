@@ -180,7 +180,13 @@ export default function Main () {
                                 </Swiper>
                             </div>
                             <div className='project_right'>
-                                <p>{data.description}</p>
+                                <p>
+                                    {data.description.map((obj, index) => {
+                                        return (
+                                            <span>{obj.des}</span>
+                                        )
+                                    })}
+                                </p>
                                 <div className='stack'>
                                     <dl>
                                         <dt>✔ 주요기능</dt>
