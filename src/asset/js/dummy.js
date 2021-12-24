@@ -16,8 +16,9 @@ export const projectData = [
             {des : 'CRUD의 연습과 특정 라이브러리를 사용하여 실무에 투입될 수 있는 능력을 키우는 것을 목적으로 시작한 프로젝트이지만, 직접 사용하는 일이 잦아지면서 실제로 사용 가능한 투두리스트 앱을 만드는 것을 최종 목표로 삼고 꾸준히 개발중인 프로젝트 입니다.'},
         ],
         mainFunc : '할일 불러오기·추가·수정·삭제 기능(Storage), 맛집 등록하기 · 삭제 · 위치찾기(Google maps)',
+        library  : 'LocalStorage, Google Maps ',
         github : 'https://github.com/zkzk8953/Heon-toDoList',
-        feStack : 'React, LocalStorage'
+        feStack : 'React'
     },
     {
         title : "공새로",
@@ -26,14 +27,15 @@ export const projectData = [
             {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
         ],
         description : [ 
-            {des : '공새로는 수요 예측 분석을 통한 건설 현장 맞춤형 건자재 조달 플랫폼 솔루션입니다. 사용자는 이 솔루션을 활용해서 건자재 투입 시기와 비용을 예측할 수 있는데 이를 통해서 사업성 분석, 현금 흐름 리스크 관리가 가능합니다.'},
-            {des : ''},
-            {des : ''},
-            {des : ''}
+            {des : '공새로는 건설 현장과 건자재 공급사 간 거래를 중개하는 플랫폼으로 2명의 백엔드 개발자와 2명의 프론트 개발자로 팀을 구성하여 진행한 반응형 웹/앱 프로젝트입니다. '},
+            {des : '전체적으로는 1개의 프로젝트지만 세부적으로는 랜딩 페이지, 고객 페이지, 제휴사 페이지, 관리자 페이지로 나뉘었고, 랜딩 페이지를 제외한 나머지 프로젝트의 프론트 작업을 본인이 진행하였습니다.'},
+            {des : '쿠키를 이용한 로그인 기능과 회원가입 기능, 결제 시스템, 카카오맵 라이브러리를 사용한 맵서비스, 엑셀 라이브러리를 이용한 입력폼 등을 구현하였습니다.'},
+            {des : '프로젝트를 진행하면서 협업과 관련된 경험을 쌓을 수 있었고, 목적에 맞는 서비스를 구현하기 위해서 기획자와 개발자들 간의 소통이 얼마나 중요한지 깨닫게 되었습니다.'}
         ],
         mainFunc : '카카오맵 api를 이용한 건설현장 매칭기능, 아임포트 이용 결제기능, socket.io 이용 채팅기능',
+        library  : 'Axios, Kakao Maps, iamport, excel.js, chart.js, js-Cookies, daum-postcode  ',
         github : '깃헙주소',
-        feStack : 'React, Context Api, ',
+        feStack : 'React, Context Api ',
         beStack : 'AqueryTool, Intellij, Java Spring'
     },
     {
@@ -48,6 +50,7 @@ export const projectData = [
             {des : ''},
             {des : ''}
         ],
+        library  : 'Axios, Kakao maps, iamport, excel,   ',
         mainFunc : '주요기능',
         github : '깃헙주소',
         feStack : '프론트엔드 기술 스택'

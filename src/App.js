@@ -18,9 +18,9 @@ function App() {
   const location = useLocation();
 
 
-  useEffect(()=>{
+/*   useEffect(()=>{
     window.scrollTo(0,0);
-  }, [location]);
+  }, [location]); */
 
 
 

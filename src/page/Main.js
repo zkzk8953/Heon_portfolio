@@ -197,6 +197,10 @@ export default function Main () {
                                         <dd><a href={data.github} rel="noreferrer noopener" target="_blank">{data.github}</a></dd>
                                     </dl>
                                     <dl>
+                                        <dt>✔ 주요 라이브러리</dt>
+                                        <dd>{data.library}</dd>
+                                    </dl>
+                                    <dl>
                                         <dt>✔ Front-end</dt>
                                         <dd>{data.feStack}</dd>
                                     </dl>
