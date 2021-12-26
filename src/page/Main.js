@@ -19,12 +19,17 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/lazy/lazy.scss"
+import Popup from '../component/etc/Popup';
 
 
 SwiperCore.use([Pagination]); // *
 
 export default function Main () {
     const [isOver, setIsOver] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
+
+
+
     // const [scrollPosition, setScrollPosition] = useState(0);
 
 /*     const updateScroll = () => {
@@ -41,6 +46,7 @@ export default function Main () {
 
     return (
         <>
+            {isOpen && <Popup setIsOpen={setIsOpen} />}
             <div className="main_section1">
                 <div className='filter'></div>
                 <div 
@@ -209,6 +215,12 @@ export default function Main () {
                                         <dt>✔ Back-end</dt>
                                         <dd>{data.beStack}</dd>
                                     </dl>}
+                                    {data.video &&
+                                    <dl>
+                                        <dt>✔ Video</dt>
+                                        <dd style={{'color':'#189bfa','cursor':'pointer'}} onClick={()=>{setIsOpen(true);}}>영상보기</dd>
+                                    </dl>
+                                    }
                                 </div>
                             </div>
                         </div>

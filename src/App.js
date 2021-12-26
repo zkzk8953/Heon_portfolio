@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect } from 'react';
 //library
 import { Route, Switch } from 'react-router-dom';
@@ -7,7 +9,6 @@ import Footer from './component/common/Footer';
 import Main from './page/Main';
 //css
 import '../src/asset/css/reset.css';
-import { useLocation } from 'react-router-dom';
 
 
 

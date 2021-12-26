@@ -21,7 +21,8 @@ export const projectData = [
         mainFunc : '할일 불러오기·추가·수정·삭제 기능(Storage), 맛집 등록하기 · 삭제 · 위치찾기(Google maps)',
         library  : 'LocalStorage, Google Maps ',
         github : 'https://github.com/zkzk8953/Heon-toDoList',
-        feStack : 'React'
+        feStack : 'React',
+
     },
     {
         title : "공새로",
@@ -37,9 +38,10 @@ export const projectData = [
         ],
         mainFunc : '카카오맵 api를 이용한 건설현장 매칭기능, 아임포트 이용 결제기능, socket.io 이용 채팅기능',
         library  : 'Axios, Kakao Maps, iamport, excel.js, chart.js, js-Cookies, daum-postcode  ',
-        github : '깃헙주소',
+        github : 'https://github.com/zkzk8953/Gongsaero',
         feStack : 'React, Context Api ',
-        beStack : 'AqueryTool, Intellij, Java Spring'
+        beStack : 'AqueryTool, Intellij, Java Spring',
+        video : 'yes'
     },
     {
         title : "포트폴리오 웹사이트",
