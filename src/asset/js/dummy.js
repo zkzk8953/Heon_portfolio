@@ -1,6 +1,9 @@
 import ToDo from '../images/TODO.png';
 import ToDo3 from '../images/TODO3.png';
-
+import Gong1 from '../images/gong5.png';
+import Gong2 from '../images/gong2.png';
+import Gong3 from '../images/gong3.png';
+import Gong4 from '../images/gong4.png';
 
 //section2 data
 export const projectData = [
@@ -24,7 +27,7 @@ export const projectData = [
         title : "공새로",
         term : "2021.10 ~ (4人 팀 프로젝트)",
         photo : [
-            {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
+            {photoUrl: Gong1},{photoUrl : Gong4}, {photoUrl: Gong2},{photoUrl : Gong3}, 
         ],
         description : [ 
             {des : '공새로는 건설 현장과 건자재 공급사 간 거래를 중개하는 플랫폼으로 2명의 백엔드 개발자와 2명의 프론트 개발자로 팀을 구성하여 진행한 반응형 웹/앱 프로젝트입니다. '},

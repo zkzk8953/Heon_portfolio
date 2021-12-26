@@ -15,7 +15,7 @@ import { useLocation } from 'react-router-dom';
 
 
 function App() {
-  const location = useLocation();
+  //const location = useLocation();
 
 
 /*   useEffect(()=>{

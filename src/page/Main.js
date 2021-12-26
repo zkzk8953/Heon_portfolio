@@ -25,12 +25,12 @@ SwiperCore.use([Pagination]); // *
 
 export default function Main () {
     const [isOver, setIsOver] = useState(false);
-/*     const [scrollPosition, setScrollPosition] = useState(0);
+    // const [scrollPosition, setScrollPosition] = useState(0);
 
-    const updateScroll = () => {
+/*     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-    };
- */
+    }; */
+
 
     useEffect (()=> {
         window.scrollTo(0, 0);
@@ -197,7 +197,7 @@ export default function Main () {
                                         <dd><a href={data.github} rel="noreferrer noopener" target="_blank">{data.github}</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt>✔ 주요 라이브러리</dt>
+                                        <dt>✔ 라이브러리</dt>
                                         <dd>{data.library}</dd>
                                     </dl>
                                     <dl>
