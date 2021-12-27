@@ -55,9 +55,9 @@ export const projectData = [
             {des : ''},
             {des : ''}
         ],
-        library  : 'Axios, Kakao maps, iamport, excel,   ',
-        mainFunc : '주요기능',
-        github : '깃헙주소',
-        feStack : '프론트엔드 기술 스택'
+        library  : 'axios, font-awesome',
+        mainFunc : '동영상',
+        github : 'https://github.com/zkzk8953/Heon_portfolio',
+        feStack : 'React'
     }
 ]

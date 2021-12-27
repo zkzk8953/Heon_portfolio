@@ -26,7 +26,7 @@ SwiperCore.use([Pagination]); // *
 
 export default function Main () {
     const [isOver, setIsOver] = useState(false);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
 
 
