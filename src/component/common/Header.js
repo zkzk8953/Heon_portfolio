@@ -5,6 +5,7 @@ import React, {useEffect, useState} from 'react';
 //library
 import { useMediaQuery } from 'react-responsive';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 //css
 import '../../asset/css/common.scss';
 
@@ -14,21 +15,21 @@ export default function Header () {
     const [isClick, setIsClick] = useState(false);
     const [menuList, setMenuList] = useState([
         {
-            id: 0,
+            id: 1,
             title: "About me",
             active: false,
             top: 800,
             mTop: 736
         },
         {
-            id: 1,
+            id: 2,
             title: "Skills",
             active: false,
             top: 1276,
             mTop: 1852
         },
         {
-            id: 2,
+            id: 3,
             title: "Project",
             active: false,
             link : "/contact",
@@ -36,7 +37,7 @@ export default function Header () {
             mTop : 2473
         },
         {
-            id: 3,
+            id: 4,
             title: "Archiving",
             active: false,
             link : "/contact",
@@ -44,7 +45,7 @@ export default function Header () {
             mTop : 5107
         },
         {
-            id: 4,
+            id: 5,
             title: "Career",
             active: false,
             link : "/contact",
@@ -86,12 +87,13 @@ export default function Header () {
                         <li 
                             key={data.id}
                             className="mobile_menu"
-                            onClick={()=>{
+                        >
+                            <Link to={data.id} spy={true} smooth={true} onClick={()=>{
                                 window.scrollTo({left:0, top:data.mTop, behavior :'smooth'});
                                 setIsClick(false)
-                            }}
-                        >
+                            }}>
                             {data.title}
+                            </Link>
                         </li>
                     )
                 })}
@@ -121,11 +123,10 @@ export default function Header () {
                                 key={data.id}
                                 to={data.link} 
                                 className={scrollPosition > 15 ? "active_font" : "none"}
-                                onClick={()=>{
-                                    window.scrollTo({left:0, top:data.top, behavior :'smooth'})
-                                }}
                             >
-                                {data.title}
+                                <Link to={data.id} spy={true} smooth={true}>
+                                    {data.title}
+                                </Link>
                                 </li>
                         )
                     })}

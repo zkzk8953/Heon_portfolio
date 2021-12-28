@@ -4,6 +4,20 @@ import Gong1 from '../images/gong5.png';
 import Gong2 from '../images/gong2.png';
 import Gong3 from '../images/gong3.png';
 import Gong4 from '../images/gong4.png';
+import Port1 from '../images/1.png';
+import Port2 from '../images/2.png';
+import Port3 from '../images/3.png';
+
+//video
+import Video1 from '../video/Captures/login1.mp4';
+import Video2 from '../video/Captures/login2.mp4';
+import Video3 from '../video/Captures/find.mp4';
+import Video4 from '../video/Captures/join.mp4';
+import Video5 from '../video/Captures/quick.mp4';
+import Video6 from '../video/Captures/request1.mp4';
+import Video7 from '../video/Captures/request2.mp4';
+import Video8 from '../video/Captures/order.mp4';
+import Video9 from '../video/Captures/contract.mp4';
 
 //section2 data
 export const projectData = [
@@ -47,17 +61,29 @@ export const projectData = [
         title : "포트폴리오 웹사이트",
         term : "2021.12 (개인 프로젝트)",
         photo : [
-            {photoUrl: '../asset/images/TODO.png'},{photoUrl: '사진2'},{photoUrl : '사진3'}
+            {photoUrl: Port1},{photoUrl: Port2},{photoUrl : Port3}
         ],
         description : [ 
-            {des : ''},
-            {des : ''},
-            {des : ''},
-            {des : ''}
+            {des : '포트폴리오를 목적으로 제작하게된 React기반의 웹페이지입니다. 리액트의 최적화와 관련된 공부를 병행하면서 진행한 프로젝트로 지금 보고 계신 이 사이트에 해당합니다.'},
+            {des : '순수한 React로 개발해 동영상들이나 애니메이션 등의 로드 때문에 약간의 대기시간이 있다고 생각이 되어서 서버 사이드 렌더링 프레임 워크인 Next.js를 학습하여 다시 개발하고자 하는 계획이 생겼습니다.'},
+            {des : 'Github-pages와 개인 도메인을 연결하여 배포를 완료했습니다.'},
         ],
         library  : 'axios, font-awesome',
-        mainFunc : '동영상',
+        mainFunc : '인적사항, 보유 기술 스택, 사이트 링크, 프로젝트 경험, 업무 경력 등',
         github : 'https://github.com/zkzk8953/Heon_portfolio',
         feStack : 'React'
     }
 ]
+
+
+export const VideoList = [
+    {video : Video4, title : '회원가입'},
+    {video : Video1, title : '로그인1'}, 
+    {video : Video2, title : '로그인2'}, 
+    {video : Video3, title : '결제시스템'}, 
+    {video : Video6, title : '견적요청'}, 
+    {video : Video7, title : '견적요청2'}, 
+    {video : Video9, title : '계약하기'},
+    {video : Video8, title : '주문하기'},
+    {video : Video5, title : '퀵주문하기'}
+];

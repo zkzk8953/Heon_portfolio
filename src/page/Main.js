@@ -20,6 +20,7 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/lazy/lazy.scss"
 import Popup from '../component/etc/Popup';
+import { Link } from 'react-scroll';
 
 
 SwiperCore.use([Pagination]); // *
@@ -65,9 +66,9 @@ export default function Main () {
                 <div className='section1_text'>
                     <p>안녕하세요 ! <br /> 현재에 안주하지 않고, 끊임없이 발전하는 <br /> 프론트엔드 개발자 이성헌입니다.</p>
                 </div>
-                <button>MORE <FontAwesomeIcon icon={faChevronDown} size='sm' /></button>
+                <Link to='1' spy={true} smooth={true}><button>MORE <FontAwesomeIcon icon={faChevronDown} size='sm' /></button></Link>
             </div>
-            <div className="main_section2 section">
+            <div className="main_section2 section" id="1">
                 <h2>ABOUT ME</h2>
                 <div className='section2_contents'>
                     <div className='contents1 contents'>
@@ -120,7 +121,7 @@ export default function Main () {
                     </div>
                 </div>
             </div>
-            <div className="main_section3 section">
+            <div className="main_section3 section" id="2">
                 <h2>SKILLS</h2>
                 <div className='section3_contents'>
                     <div className='left_contents side'>
@@ -161,7 +162,7 @@ export default function Main () {
                     </div>
                 </div>
             </div>
-            <div className="main_section4 section">
+            <div className="main_section4 section" id="3">
                 <h2>PROJECT</h2>
                 {projectData.map((data, i) => {
                     return (
@@ -228,7 +229,7 @@ export default function Main () {
                     )
                 })}
             </div>
-            <div className="main_section5 section">
+            <div className="main_section5 section" id="4">
                 <h2>ARCHIVING</h2>
                 <div className='section5_contents'>
                     <div className='archiving_box'>
@@ -253,7 +254,7 @@ export default function Main () {
                     </div>
                 </div>
             </div>
-            <div className='main_section6 section'>
+            <div className='main_section6 section' id="5">
                 <h2>CAREER</h2>
                 <div className='career_contents'>
                     <div className='career_left'>

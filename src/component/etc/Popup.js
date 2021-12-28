@@ -1,10 +1,16 @@
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
+import { VideoList } from '../../asset/js/dummy';
 
 import '../../asset/css/common.scss';
 
 export default function Popup ({setIsOpen}) {
+    const [nowPlay, setNowPlay] = useState({
+        nowVideo : null,
+    });
+
+
 
     useEffect(() => {
         document.body.style.cssText = `
@@ -20,7 +26,6 @@ export default function Popup ({setIsOpen}) {
       }, []);
 
 
-
     return (
         <div className='popup_wrap'>
             <div className='popup_container'>
@@ -28,28 +33,20 @@ export default function Popup ({setIsOpen}) {
                     <h1>영상보기</h1>
                     <p onClick={()=>{
                         setIsOpen(false);
-                    }}><FontAwesomeIcon icon={faTimes} size='2x'/></p>
+                    }}><FontAwesomeIcon icon={faTimes} size='2x' className='popup_icon'/></p>
                 </div>
                 <div className='popup_btm'>
                     <div className='video_wrap'>
-                        <video />   
+                        <video src={nowPlay.nowVideo} muted loop autoPlay />   
                     </div>
                     <ul>
-                        <li>첫번째 비디오</li>    
-                        <li>두번째 비디오</li>    
-                        <li>세번째 비디오</li>    
-                        <li>네번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
-                        <li>다섯번째 비디오</li>    
+                        {VideoList.map((data, i) => {
+                            return (
+                                <li key={data.title} onClick={()=>{
+                                    setNowPlay({...nowPlay, nowVideo : data.video});
+                                }}>{data.title}</li>
+                            )
+                        })}  
                     </ul> 
                 </div>
             </div>
