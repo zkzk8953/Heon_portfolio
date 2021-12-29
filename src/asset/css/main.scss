@@ -52,6 +52,7 @@ $subColor : #222;
         box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
         animation: identifier 1s infinite alternate;
         font-weight: 600;
+        left:50%; transform: translateX(-50%);
     }
 }
 
